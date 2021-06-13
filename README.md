@@ -12,8 +12,8 @@ A [Bootstrap 4](https://getbootstrap.com/) template project for [Github Pages](h
 
 ## Contribution
 
-[See the contribution guide.](./CONTRIBUTING.md)
+TBD
 
 ## License
 
-[See the license file.](./LICENSE.md)
+The content of this site is copyright of Claudio Zanotti. All Rights Reserved. 
