@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="author" content="Ivanhercaz" />
+		<title>Quickstart  - Buruma Documentation
+</title>
+		<link rel="stylesheet" type="text/css" href="/theme/css/style.min.css">
+		<script src="/theme/js/menu.js"></script>
+		<!-- Pending to improve -->
+	</head>
+	<body>
+		<nav class="navbar is-info" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+						<a class="navbar-item" href="">
+							<img src="/theme/images/buruma_logo.png" width="112" height="28">
+						</a>
+					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+				<div id="navbarMain" class="navbar-menu">
+					<div class="navbar-start">
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link" href="/categories">
+Categories							</a>
+							<div class="navbar-dropdown">
+								<a class="navbar-item" href="/category/baseball.html">
+									Baseball
+								</a>
+								<a class="navbar-item" href="/category/documentation.html">
+									Documentation
+								</a>
+								<a class="navbar-item" href="/category/finance.html">
+									Finance
+								</a>
+							</div>
+						</div>
+				</div>
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="buttons">
+								<a class="button is-link" href="/contact">Contact</a>
+								<a class="button is-primary" href="https://github.com/ivanhercaz/buruma">GitHub</a>
+								<a class="button is-warning" href="https://github.com/ivanhercaz/buruma/issues">Report</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			</nav>
+		<section class="section">
+			<div class="container">
+<article class="message is-info">
+	<div class="message-header">
+		<h2>Quickstart</h2>
+		<p><time itemprop="dateCreated" datetime="2019-12-08T20:00:00+00:00">Dec 08, 2019</time></p>
+	</div>
+	<div class="message-body has-text-dark">
+		<p>Hi! If you want to use Buruma, I recommend to you to keep in mind the next things:</p>
+<ul>
+<li><strong>Buruma is under development</strong>. Its release 0.1.0 make its able to use but with risks. There are many issue to improve and to solve.</li>
+<li><strong>Buruma might grow fast, but might grow slow too</strong>. Everything will depends of the time available to contribute and the users involve. Thus I recommendto anyone to <a href="https://github.com/ivanhercaz.com/buruma/issues">report anything</a> (suggestions, questions, bugs...). If you see something in this site or in the live demo of Buruma, please, report it!</li>
+<li><strong>Buruma is built with Bulma</strong>, an easy to use but powerful CSS framework. Buruma uses <code>node-sass</code> convert and minify the SCSS into the CSS, but <strong>it isn't necessary</strong> if you just want to use the theme. If you want to contribute to Buruma, you should follow the <em>Contributing guidelines</em> (not written yet).</li>
+<li><strong>Buruma is to be relaxed and enjoy</strong>. It might be a point that Buruma isn't accomplish yet due it needs more work, but the idea behind Buruma is to work as a modularized theme in which you can change the settings to adapt to your needs, so you can change the appearance of your website (colors, layout...) and its behaviour.</li>
+<li><strong>Buruma...</strong> What more? We need to discover!</li>
+</ul>
+<p>So if you read this and you still want to test Buruma, you can follow the next instructions:</p>
+<ol>
+<li>Clone Buruma's repository wherever you prefer: <code>git@github.com:ivanhercaz/buruma.git</code> (with SSH) or <code>https://github.com/ivanhercaz/buruma.git</code> with HTTPS.</li>
+<li>In <code>pelicanconf.py</code> you have to change <code>THEME</code> to the theme path (e.g., <code>THEME = "themes/buruma"</code>) according to where you cloned it.</li>
+<li>In <code>pelicanconf.py</code> you have to add the i18n extension for Jinja2. For that you have to set <code>JINJA_ENVIRONMENT</code>:</li>
+</ol>
+<div class="highlight"><pre><span></span><span class="n">JINJA_ENVIRONMENT</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;extensions&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;jinja2.ext.i18n&quot;</span><span class="p">],</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ol>
+<li>Then you need to clone the Pelican plugins repository wherever you prefer: <code>git clone --recursive https://github.com/getpelican/pelican-plugins</code> or <code>git clone --recurse-submodules=i18n_subsites --shallow-submodules https://github.com/getpelican/pelican-plugins.git docs/plugins</code>, if you want to clone the repository itself and <code>i18n_subsites</code>, avoiding the rest of plugins included as submodules in the repository.</li>
+<li>Then you have to add <code>i18n_subsites</code> to your <code>pelicanconf.py</code>:</li>
+</ol>
+<div class="highlight"><pre><span></span><span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;plugins&quot;</span><span class="p">]</span>
+<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;i18n_subsites&quot;</span><span class="p">,</span> <span class="p">]</span>
+</pre></div>
+
+
+<ol>
+<li>Now you can generate your website! But I recommend you to read <a href="/settings">Settings</a>, after or before your first generation.</li>
+</ol>
+<p>At this moment this is the only method available to use Buruma. If you have some suggestion, question or report, you can post it in the <a href="https://github.com/ivanhercaz.com/buruma/issues">issues</a> section of the repository.</p>
+	</div>
+</article>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container has-text-centered">
+				<div class="columns">
+					<div class="column">
+							Este sitio web funciona gracias a <a href='https://getpelican.com'>Pelican</a>, un gestor de contenido desarrollado en <a href='https://python.org'>Python</a> y utiliza la plantilla <a href='https://github.com/ivanhercaz/buruma'>Buruma</a>.
+						<p><a href="https://bulma.io">
+							<img src="/theme/images/made_with_bulma.png" alt="Made with Bulma" width="128" height="24">
+						</a></p>
+					</div>
+					<div class="column">
+							<p><a rel='license' href='https://creativecommons.org/licenses/by-sa/4.0/'><img alt='Licencia Creative Commons' style='border-width: 0'src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png' /></a><br />This work is under a <a rel='license' class='license-text'href='https://creativecommons.org/licenses/by-sa/4.0'>Creative Commons Attribution-ShareAlike 4.0 International license</a>.	
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

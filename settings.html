@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="author" content="Ivanhercaz" />
+		<title>Settings  - Buruma Documentation
+</title>
+		<link rel="stylesheet" type="text/css" href="/theme/css/style.min.css">
+		<script src="/theme/js/menu.js"></script>
+		<!-- Pending to improve -->
+	</head>
+	<body>
+		<nav class="navbar is-info" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+						<a class="navbar-item" href="">
+							<img src="/theme/images/buruma_logo.png" width="112" height="28">
+						</a>
+					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+				<div id="navbarMain" class="navbar-menu">
+					<div class="navbar-start">
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link" href="/categories">
+Categories							</a>
+							<div class="navbar-dropdown">
+								<a class="navbar-item" href="/category/baseball.html">
+									Baseball
+								</a>
+								<a class="navbar-item" href="/category/documentation.html">
+									Documentation
+								</a>
+								<a class="navbar-item" href="/category/finance.html">
+									Finance
+								</a>
+							</div>
+						</div>
+				</div>
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="buttons">
+								<a class="button is-link" href="/contact">Contact</a>
+								<a class="button is-primary" href="https://github.com/ivanhercaz/buruma">GitHub</a>
+								<a class="button is-warning" href="https://github.com/ivanhercaz/buruma/issues">Report</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			</nav>
+		<section class="section">
+			<div class="container">
+<article class="message is-info">
+	<div class="message-header">
+		<h2>Settings</h2>
+		<p><time itemprop="dateCreated" datetime="2019-12-08T21:30:00+00:00">Dec 08, 2019</time></p>
+	</div>
+	<div class="message-body has-text-dark">
+		<p>Buruma is being developed to be easy to configure and to use. One of its goals is to be able to adapt itself easily. This can be possible with a good structure that makes possible to configure everything with small changes or additions. Surely, <strong>Buruma doesn't accomplish with this</strong>, but I hope Buruma grows fastly.</p>
+<h2><code>pelicanconf.py</code></h2>
+<p>In this section you can check the available variables to configure Buruma with your Pelican configuration file (<code>pelicanconf.py</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Type</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MENUITEMS_NAVBAR</code></td>
+<td>Set of items (text to show and url) in the left part of the menu of the navigation bar</td>
+<td>Tuple</td>
+<td><code>(("Docs", "/p/docs.html"), ("Info", "/p/info.html"))</code></td>
+</tr>
+<tr>
+<td><code>MENUITEMS_NAVBAR_FEATURED</code></td>
+<td>Set of items with an different style in the right part of the menu of the navigation bar</td>
+<td>Tuple</td>
+<td><code>(("Docs", "/p/docs.html", "is-link"), ("Info", "/p/info", "is-info"))</code></td>
+</tr>
+<tr>
+<td><code>NAVBAR_STYLE</code></td>
+<td>CSS class for the navigation bar (see section <em>Buruma SCSS/CSS</em></td>
+<td>String</td>
+<td><code>is-info</code>, <code>is-warning</code></td>
+</tr>
+<tr>
+<td><code>CATS_STYLE</code></td>
+<td>Allow to apply a CSS class to elements (e.g., entries) of the specified categories</td>
+<td>Dictionary</td>
+<td><code>{"Example cat 1": "is-info", "Example cat 2": "is-link"}</code></td>
+</tr>
+<tr>
+<td><code>CATS_NOT_DROPDOWN</code></td>
+<td>If it is <code>True</code>, just show a link to the categories page and not a dropdown with a link for each category</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td><code>FOOTER</code></td>
+<td>Customized HTML snippet to replace the default text in the footer</td>
+<td>Tuple (multiline string)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>LICENSE</code></td>
+<td>If it is <code>True</code>, show the customized <code>LICENSE_NOTICE</code>, if it is <code>False</code> or it isn't declared, show a copyright notice</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td><code>LICENSE_NOTICE</code></td>
+<td>Allow to add a HTML snippet to add a license</td>
+<td>Tuple (multiline string)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>WELCOME_HEADING</code></td>
+<td>Customized heading to replace the default welcoming heading</td>
+<td>String</td>
+<td>Welcome to my website!</td>
+</tr>
+<tr>
+<td><code>ABOUT_EXTRACT_STATUS</code></td>
+<td>If it is <code>True</code>, show the customized <code>ABOUT_EXTRACT</code></td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td><code>ABOUT_EXTRACT</code></td>
+<td>Allow to add a HTML snippet to add an extract about the site (or whatever) between the navigation bar and the content. It is only shown in the home page</td>
+<td>Tuple (multiline string)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+	</div>
+</article>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container has-text-centered">
+				<div class="columns">
+					<div class="column">
+							Este sitio web funciona gracias a <a href='https://getpelican.com'>Pelican</a>, un gestor de contenido desarrollado en <a href='https://python.org'>Python</a> y utiliza la plantilla <a href='https://github.com/ivanhercaz/buruma'>Buruma</a>.
+						<p><a href="https://bulma.io">
+							<img src="/theme/images/made_with_bulma.png" alt="Made with Bulma" width="128" height="24">
+						</a></p>
+					</div>
+					<div class="column">
+							<p><a rel='license' href='https://creativecommons.org/licenses/by-sa/4.0/'><img alt='Licencia Creative Commons' style='border-width: 0'src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png' /></a><br />This work is under a <a rel='license' class='license-text'href='https://creativecommons.org/licenses/by-sa/4.0'>Creative Commons Attribution-ShareAlike 4.0 International license</a>.	
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
